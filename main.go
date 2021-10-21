@@ -11,7 +11,7 @@ var router *gin.Engine
 func main() {
 
   router = gin.Default()
-  router.LoadHTMLGlob("templates/*")
+  router.LoadHTMLGlob("public/*")
 
   router.GET("/", func(c *gin.Context) {
 
